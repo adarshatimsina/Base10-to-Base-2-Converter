@@ -1,18 +1,15 @@
-
 package Converter;
 
 import javax.swing.JOptionPane;
 
 public class Main extends javax.swing.JFrame {
 
-
     public Main() {
         initComponents();
     }
 
 
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    @SuppressWarnings("unchecked")                         
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -151,8 +148,6 @@ public class Main extends javax.swing.JFrame {
                     }
         
         }     
-        
-
     }                                       
 
    
