@@ -1,5 +1,3 @@
-package Converter;
-
 import javax.swing.JOptionPane;
 
 public class Main extends javax.swing.JFrame {
@@ -30,9 +28,9 @@ public class Main extends javax.swing.JFrame {
 
         jLabel2.setText("CONVERT TO");
 
-        convertFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB", "KiB", "MiB", "GiB", "TiB", "PiB" }));
+        convertFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB", "KiB", "MiB", "GiB", "TiB", "PiB" })); //Convert From Combo Box
 
-        convertTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB", "KiB", "MiB", "GiB", "TiB", "PiB" }));
+        convertTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB", "KiB", "MiB", "GiB", "TiB", "PiB" }));  //Convert To Combo Box
 
         txtSizeLength.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
