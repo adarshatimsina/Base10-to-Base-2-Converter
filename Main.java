@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-
+ 
 public class Main extends javax.swing.JFrame {
 
     public Main() {
