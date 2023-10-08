@@ -192,7 +192,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField txtSizeLength;
     // End of variables declaration                   
 
-    private double getBytes(double convertSize, String ConvertFrom) {
+    private double getBytes(double convertSize, String ConvertFrom) { //Converting everything to bytes
         
         switch(ConvertFrom){
         
