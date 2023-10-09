@@ -119,7 +119,7 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void txtSizeLengthActionPerformed(java.awt.event.ActionEvent evt) {                                              
-        // TODO add your handling code here:
+        
     }                                             
 
     private void ConvertActionPerformed(java.awt.event.ActionEvent evt) {                                        
