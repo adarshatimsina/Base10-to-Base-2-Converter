@@ -147,7 +147,6 @@ public class Main extends javax.swing.JFrame {
         
         }     
     }                                       
-
    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -197,8 +196,8 @@ public class Main extends javax.swing.JFrame {
         switch(ConvertFrom){
         
             case "Bits" -> {
-                return convertSize/8;
-            }
+                return convertSize/8;           // 8 Bit = 1 Byte
+            }   
             
             case "Bytes" -> {
                 return convertSize;
@@ -249,12 +248,12 @@ public class Main extends javax.swing.JFrame {
             
     }
 
-    private double getFinalvalue(double inBytes, String ConvertTo) {
+    private double getFinalvalue(double inBytes, String ConvertTo) { //Recommended to add this to another file , since this is a function
                 
         switch(ConvertTo){
         
             case "Bits" -> {
-                return inBytes*8;
+                return inBytes*8;       // 1Byte = 8 Bit
             }
             
             case "Bytes" -> {
