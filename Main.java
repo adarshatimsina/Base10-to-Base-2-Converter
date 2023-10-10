@@ -138,6 +138,9 @@ public class Main extends javax.swing.JFrame {
     
     private void HistoryActionPerformed(java.awt.event.ActionEvent evt){
 
+        // Save history as ," 50GB was converted to GiB"
+        
+
     }
 
     private void ConvertActionPerformed(java.awt.event.ActionEvent evt) {                                        
