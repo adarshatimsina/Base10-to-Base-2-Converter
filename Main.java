@@ -6,7 +6,6 @@ public class Main extends javax.swing.JFrame {
         initComponents();
     }
 
-
 // @SuppressWarnings("unchecked")                         
     private void initComponents() {
 
@@ -17,6 +16,7 @@ public class Main extends javax.swing.JFrame {
         convertTo = new javax.swing.JComboBox<>();
         txtSizeLength = new javax.swing.JTextField();
         Convert = new javax.swing.JButton();
+        History = new javax.swing.JButton();
         printValue = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,6 +42,15 @@ public class Main extends javax.swing.JFrame {
         Convert.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ConvertActionPerformed(evt);
+            }
+
+        
+        });
+
+        History.setText("History");
+        History.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HistoryActionPerformed(evt);
             }
         });
 
@@ -77,6 +86,11 @@ public class Main extends javax.swing.JFrame {
                 .addGap(53, 53, 53)
                 .addComponent(printValue, javax.swing.GroupLayout.PREFERRED_SIZE, 684, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(History, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(800, 800, 800))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,7 +106,7 @@ public class Main extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addComponent(txtSizeLength, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Convert)
+                .addComponent(Convert).addComponent(History)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
                 .addComponent(printValue)
                 .addGap(172, 172, 172))
@@ -120,7 +134,11 @@ public class Main extends javax.swing.JFrame {
 
     private void txtSizeLengthActionPerformed(java.awt.event.ActionEvent evt) {                                              
         
-    }                                             
+    }        
+    
+    private void HistoryActionPerformed(java.awt.event.ActionEvent evt){
+
+    }
 
     private void ConvertActionPerformed(java.awt.event.ActionEvent evt) {                                        
         
@@ -189,6 +207,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel printValue;
     private javax.swing.JTextField txtSizeLength;
+    private javax.swing.JButton History;
     // End of variables declaration                   
 
     private double getBytes(double convertSize, String ConvertFrom) { //Converting everything to bytes
