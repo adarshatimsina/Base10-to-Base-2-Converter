@@ -1,3 +1,7 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.nio.Buffer;
+
 import javax.swing.JOptionPane;
  
 public class Main extends javax.swing.JFrame {
@@ -140,7 +144,6 @@ public class Main extends javax.swing.JFrame {
 
         // Save history as ," 50GB was converted to GiB"
         
-
     }
 
     private void ConvertActionPerformed(java.awt.event.ActionEvent evt) {                                        
@@ -325,5 +328,16 @@ public class Main extends javax.swing.JFrame {
     }
         return 0;
    
+}
+
+
+private void HistoryWriter(String convertedFrom , String convertedTo){
+
+        FileWriter fileWriter = new FileWriter("history.txt",true);
+        BufferedWriter bw = new BufferedWriter(fileWriter);
+        bw.write(convertedFrom +"was converted to" + convertedTo);
+        
+
+
 }
 }
