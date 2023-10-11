@@ -1,5 +1,6 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.Buffer;
 
 import javax.swing.JOptionPane;
@@ -45,7 +46,12 @@ public class Main extends javax.swing.JFrame {
         Convert.setText("Convert");
         Convert.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConvertActionPerformed(evt);
+                try {
+                    ConvertActionPerformed(evt);
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
             }
 
         
@@ -146,7 +152,7 @@ public class Main extends javax.swing.JFrame {
         
     }
 
-    private void ConvertActionPerformed(java.awt.event.ActionEvent evt) {                                        
+    private void ConvertActionPerformed(java.awt.event.ActionEvent evt) throws IOException {                                        
         
         String ConvertFrom = convertFrom.getSelectedItem().toString();
         String ConvertTo = convertTo.getSelectedItem().toString();
@@ -161,6 +167,8 @@ public class Main extends javax.swing.JFrame {
                 double finalValue = getFinalvalue(inBytes,ConvertTo);
                 String FinalValueWithoutE = String.format("%.0f", finalValue);
                 printValue.setText(FinalValueWithoutE+" "+ ConvertTo);
+                String conversionFrom = inputText +""+ConvertFrom;
+                HistoryWriter(conversionFrom,ConvertTo);
     
                 } catch (NumberFormatException e) 
                     {
@@ -331,13 +339,12 @@ public class Main extends javax.swing.JFrame {
 }
 
 
-private void HistoryWriter(String convertedFrom , String convertedTo){
+private void HistoryWriter(String convertedFrom , String convertedTo) throws IOException{
 
         FileWriter fileWriter = new FileWriter("history.txt",true);
         BufferedWriter bw = new BufferedWriter(fileWriter);
-        bw.write(convertedFrom +"was converted to" + convertedTo);
-        
-
-
+        bw.write(convertedFrom +" was converted to " + convertedTo);
+        bw.newLine();
+        bw.close();
 }
 }
