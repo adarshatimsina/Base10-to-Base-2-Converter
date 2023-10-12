@@ -1,7 +1,6 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.Buffer;
 
 import javax.swing.JOptionPane;
  
@@ -49,7 +48,6 @@ public class Main extends javax.swing.JFrame {
                 try {
                     ConvertActionPerformed(evt);
                 } catch (IOException e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
             }
