@@ -1,6 +1,8 @@
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.awt.Desktop;
 
 import javax.swing.JOptionPane;
  
@@ -144,9 +146,19 @@ public class Main extends javax.swing.JFrame {
         
     }        
     
-    private void HistoryActionPerformed(java.awt.event.ActionEvent evt){
-
-        // Save history as ," 50GB was converted to GiB"
+private void HistoryActionPerformed(java.awt.event.ActionEvent evt){
+    try {
+        File fileToOpen = new File("history.txt");
+        if (fileToOpen.exists() && fileToOpen.isFile()) {
+            Desktop.getDesktop().open(fileToOpen);
+        } else {
+            JOptionPane.showMessageDialog(this, "File not found.");
+        }
+    } catch (IOException ex) {
+        ex.printStackTrace();
+        JOptionPane.showMessageDialog(this, "Error opening file: " + ex.getMessage());
+    }
+   // Save history as ," 50GB was converted to GiB"
         
     }
 
