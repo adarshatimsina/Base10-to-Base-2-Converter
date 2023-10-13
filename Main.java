@@ -146,7 +146,7 @@ public class Main extends javax.swing.JFrame {
         
     }        
     
-private void HistoryActionPerformed(java.awt.event.ActionEvent evt){
+private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens History.txt File
     try {
         File fileToOpen = new File("history.txt");
         if (fileToOpen.exists() && fileToOpen.isFile()) {
@@ -157,9 +157,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){
     } catch (IOException ex) {
         ex.printStackTrace();
         JOptionPane.showMessageDialog(this, "Error opening file: " + ex.getMessage());
-    }
-   // Save history as ," 50GB was converted to GiB"
-        
+    }   
     }
 
     private void ConvertActionPerformed(java.awt.event.ActionEvent evt) throws IOException {                                        
