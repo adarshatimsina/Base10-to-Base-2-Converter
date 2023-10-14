@@ -301,27 +301,27 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 return inBytes;
             }
                 
-            case "KB" -> {
+            case "KB" -> { //KiloByte
                 return inBytes / 1000;
             }
             
-            case "MB" -> {
+            case "MB" -> {  //MegaByte
                 return inBytes / 1000 / 1000;
             }
             
-            case "GB" -> {
+            case "GB" -> {  //GigaByte
                 return inBytes/1000/1000/1000;
             }
                 
-            case "TB" -> {
+            case "TB" -> {  // TeraByte
                 return inBytes/1000/1000/1000/1000;
             }
                 
-            case "PB" -> {
+            case "PB" -> {  //PetaByte
                 return inBytes/1000/1000/1000/1000/1000;
             }
             
-            case "KiB" -> {
+            case "KiB" -> { 
                 return inBytes / 1024;
             }
              
