@@ -340,7 +340,8 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             case "PiB" -> {  //PebiByte
                 return inBytes/1024/1024/1024/1024/1024;
             } 
-       
+        
+            //Case"EiB" left
     }
         return 0;
    
