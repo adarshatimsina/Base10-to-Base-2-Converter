@@ -282,7 +282,11 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 
             case "PiB" -> {
                 return convertSize*1024*1024*1024*1024*1024;
-            }       
+            }   
+            
+            case "EiB" -> {
+                return convertSize*1024*1024*1024*1024*1024;
+            }
     }
         return 0;
         
