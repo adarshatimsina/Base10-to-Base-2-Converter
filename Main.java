@@ -360,7 +360,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
         return 0;
    
 }
-
+    }
 
 private void HistoryWriter(String convertedFrom , String convertedTo) throws IOException{
 
