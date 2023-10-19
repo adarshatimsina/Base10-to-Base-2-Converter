@@ -34,9 +34,9 @@ public class Main extends javax.swing.JFrame {
 
         jLabel2.setText("CONVERT TO");
 
-        convertFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB" })); //Convert From Combo Box
+        convertFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB","EB", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB" })); //Convert From Combo Box
 
-        convertTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB" }));  //Convert To Combo Box
+        convertTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB","EB", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB" }));  //Convert To Combo Box
 
         txtSizeLength.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -353,7 +353,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 return inBytes/1024/1024/1024/1024/1024;
             } 
             
-            case "EiB" -> {
+            case "EiB" -> {  
                 return inBytes/1024/1024/1024/1024/1024/1024;
             }
         }
