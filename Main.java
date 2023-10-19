@@ -263,6 +263,10 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             case "PB" -> {
                 return convertSize*1000*1000*1000*1000*1000;
             }
+
+            case "EB" -> {
+                return convertSize*1000*1000*1000*1000*1000*1000;
+            }
             
             case "KiB" -> {
                 return convertSize * 1024;
@@ -328,6 +332,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             case "EB" ->{   //ExaByte
                 return inBytes/1000/1000/1000/1000/1000/1000; 
             }
+
             case "KiB" -> { //KibiByte
                 return inBytes / 1024;
             }
