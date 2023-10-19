@@ -356,11 +356,11 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             case "EiB" -> {
                 return inBytes/1024/1024/1024/1024/1024/1024;
             }
+        }
             
         return 0;
-   
-}
-    }
+   }
+
 
 private void HistoryWriter(String convertedFrom , String convertedTo) throws IOException{
 
