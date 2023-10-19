@@ -5,3 +5,6 @@
 10EiB was converted to PiB
 10EiB was converted to TiB
 10EiB was converted to PiB
+10EiB was converted to PiB
+1EiB was converted to PiB
+1EiB was converted to PB
