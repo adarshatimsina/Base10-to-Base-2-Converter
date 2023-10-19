@@ -359,8 +359,8 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 return inBytes/1024/1024/1024/1024/1024/1024;
             }
 
-            //ZettaBytes
-            //YottaBytes
+            //ZebiBytes
+            //YobiBytes
         }
             
         return 0;
