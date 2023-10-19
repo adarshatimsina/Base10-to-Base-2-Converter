@@ -291,6 +291,8 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             case "EiB" -> {
                 return convertSize*1024*1024*1024*1024*1024*1024;
             }
+            //ZettaBytes
+            //YottaBytes
     }
         return 0;
         
@@ -353,9 +355,12 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 return inBytes/1024/1024/1024/1024/1024;
             } 
             
-            case "EiB" -> {  
+            case "EiB" -> {   //ExbiByte
                 return inBytes/1024/1024/1024/1024/1024/1024;
             }
+
+            //ZettaBytes
+            //YottaBytes
         }
             
         return 0;
