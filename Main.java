@@ -291,6 +291,15 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             case "EiB" -> {
                 return convertSize*1024*1024*1024*1024*1024*1024;
             }
+
+             case "ZiB" ->{ //ZebiByte
+                return convertSize*1024*1024*1024*1024*1024*1024*1024;
+                
+            }
+
+            case "YiB" ->{ //YobiByte
+                return convertSize*1024*1024*1024*1024*1024*1024*1024*1024;
+            }
             //ZettaBytes
             //YottaBytes
     }
