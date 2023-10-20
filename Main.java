@@ -364,7 +364,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 
             }
 
-            case "ZiB" ->{ //YobiByte
+            case "YiB" ->{ //YobiByte
                 return inBytes/1024/1024/1024/1024/1024/1024/1024/1024;
             }
             //ZebiBytes
