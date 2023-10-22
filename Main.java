@@ -268,8 +268,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 return convertSize*1000*1000*1000*1000*1000*1000;
             }
 
-            //ZB //YB
-            case "ZB" -> {
+            case "ZB" -> { 
                 return convertSize*1000*1000*1000*1000*1000*1000*1000;
             }
 
