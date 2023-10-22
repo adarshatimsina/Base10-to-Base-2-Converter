@@ -352,11 +352,11 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 return inBytes/1000/1000/1000/1000/1000/1000; 
             }
 
-            case "ZB" -> { 
+            case "ZB" -> { //ZetaByte
                 return inBytes/1000/1000/1000/1000/1000/1000/1000;
             }
 
-            case "YB" -> {
+            case "YB" -> {  //YottaByte
                 return inBytes/1000/1000/1000/1000/1000/1000/1000/1000;
             }
 
@@ -385,15 +385,13 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             }
 
             case "ZiB" ->{ //ZebiByte
-                return inBytes/1024/1024/1024/1024/1024/1024/1024;
-                
+                return inBytes/1024/1024/1024/1024/1024/1024/1024;      
             }
 
-            case "YiB" ->{ //YobiByte
+            case "YiB" ->{ //YobiByte   //LARGEST SIZE , There are no other names after this.as of 2023 Oct 22th.
                 return inBytes/1024/1024/1024/1024/1024/1024/1024/1024;
             }
-            //ZebiBytes
-            //YobiBytes
+            
         }
             
         return 0;
