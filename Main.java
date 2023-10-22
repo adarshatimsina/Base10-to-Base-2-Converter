@@ -352,6 +352,14 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
                 return inBytes/1000/1000/1000/1000/1000/1000; 
             }
 
+            case "ZB" -> { 
+                return 
+            }
+
+            case "YB" -> {
+                return 
+            }
+
             case "KiB" -> { //KibiByte
                 return inBytes / 1024;
             }
