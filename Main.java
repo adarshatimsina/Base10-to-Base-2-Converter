@@ -308,8 +308,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             case "YiB" ->{ //YobiByte
                 return convertSize*1024*1024*1024*1024*1024*1024*1024*1024;
             }
-            //ZettaBytes
-            //YottaBytes
+            
     }
         return 0;
         
