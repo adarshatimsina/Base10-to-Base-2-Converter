@@ -310,9 +310,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens His
             }
             
     }
-        return 0;
-        
-            
+        return 0;       
     }
 
     private double getFinalvalue(double inBytes, String ConvertTo) { //Recommended to add this to another file , since this is a function
