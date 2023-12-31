@@ -11,8 +11,7 @@ public class Main extends javax.swing.JFrame {
     public Main() {
         initComponents();
     }
-
-// @SuppressWarnings("unchecked")                         
+                       
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
