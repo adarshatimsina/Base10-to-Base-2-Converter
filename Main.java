@@ -1,4 +1,4 @@
-import java.io.BufferedWriter;
+import java.io.BufferedWriter; //Required Imports
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -28,9 +28,7 @@ public class Main extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 102));
         jPanel1.setForeground(new java.awt.Color(153, 255, 153));
-
         jLabel1.setText("CONVERT FROM");
-
         jLabel2.setText("CONVERT TO");
 
         convertFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB","EB","ZB", "YB", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB" })); //Convert From Combo Box
