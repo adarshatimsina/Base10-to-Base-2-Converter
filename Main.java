@@ -137,7 +137,7 @@ public class Main extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>                        
+    }                        
 
     private void txtSizeLengthActionPerformed(java.awt.event.ActionEvent evt) {                                              
         
