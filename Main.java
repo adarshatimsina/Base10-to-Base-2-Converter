@@ -143,7 +143,7 @@ public class Main extends javax.swing.JFrame {
         
     }        
     
-private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //Opens History.txt File
+private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //History.txt
     try {
         File fileToOpen = new File("history.txt");
         if (fileToOpen.exists() && fileToOpen.isFile()) {
