@@ -1,4 +1,4 @@
-import java.io.BufferedWriter; //Required Imports
+import java.io.BufferedWriter; //Required Imports for this application
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
