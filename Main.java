@@ -60,7 +60,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        printValue.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        printValue.setFont(new java.awt.Font("Segoe UI", 0, 18));
         printValue.setText("Answer:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
