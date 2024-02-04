@@ -1,4 +1,4 @@
-import java.io.BufferedWriter; //Required Imports for this application
+import java.io.BufferedWriter; //Required Imports
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,7 +12,6 @@ public class Main extends javax.swing.JFrame {
     }
                        
     private void initComponents() {
-
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -29,7 +28,6 @@ public class Main extends javax.swing.JFrame {
         jPanel1.setForeground(new java.awt.Color(153, 255, 153));
         jLabel1.setText("CONVERT FROM");
         jLabel2.setText("CONVERT TO");
-
         convertFrom.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB","EB","ZB", "YB", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB" })); //Convert From Combo Box
 
         convertTo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bits", "Bytes", "KB", "MB", "GB", "TB", "PB","EB","ZB", "YB", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB" }));  //Convert To Combo Box
@@ -393,7 +391,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //History.t
 
 private void HistoryWriter(String convertedFrom , String convertedTo) throws IOException{
 
-        FileWriter fileWriter = new FileWriter("history.txt",true);
+        FileWriter fileWriter = new FileWriter("history.txt",true); //Saves history to given directory/file.
         BufferedWriter bw = new BufferedWriter(fileWriter);
         bw.write(convertedFrom +" was converted to " + convertedTo);
         bw.newLine();
