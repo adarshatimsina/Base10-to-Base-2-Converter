@@ -379,7 +379,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //History.t
                 return inBytes/1024/1024/1024/1024/1024/1024/1024;      
             }
 
-            case "YiB" ->{ //YobiByte   //LARGEST SIZE , There are no other names after this.as of 2024 Feb.
+            case "YiB" ->{ //YobiByte   //LARGEST SIZE "Named"
                 return inBytes/1024/1024/1024/1024/1024/1024/1024/1024;
             }
             
