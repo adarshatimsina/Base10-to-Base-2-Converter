@@ -379,7 +379,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //History.t
                 return inBytes/1024/1024/1024/1024/1024/1024/1024;      
             }
 
-            case "YiB" ->{ //YobiByte   //LARGEST SIZE Right Now
+            case "YiB" ->{ //YobiByte   //LARGEST SIZE as of 2024 Feb.
                 return inBytes/1024/1024/1024/1024/1024/1024/1024/1024;
             }
             
@@ -391,7 +391,7 @@ private void HistoryActionPerformed(java.awt.event.ActionEvent evt){ //History.t
 
 private void HistoryWriter(String convertedFrom , String convertedTo) throws IOException{
 
-        FileWriter fileWriter = new FileWriter("history.txt",true); //Saves history to given directory.
+        FileWriter fileWriter = new FileWriter("history.txt",true); //Saves history
         BufferedWriter bw = new BufferedWriter(fileWriter);
         bw.write(convertedFrom +" was converted to " + convertedTo);
         bw.newLine();
